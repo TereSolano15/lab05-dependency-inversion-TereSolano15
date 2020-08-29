@@ -3,9 +3,7 @@
 
 #include <string>
 #include <ostream>
-#include "BankTransferSender.h"
-#include "CashSender.h"
-#include "CheckSender.h"
+
 
 /**
  * Abstract Class of Person

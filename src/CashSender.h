@@ -7,7 +7,7 @@
 
 #include <string>
 #include "ISendPayment.h"
-class CashSender : public ISendPayment{
+class CashSender : public ISendPayment {
 public:
     std::string sendPayment() override;
 };

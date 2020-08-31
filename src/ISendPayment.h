@@ -10,7 +10,7 @@ using namespace std;
 class ISendPayment {
 public:
     virtual ~ISendPayment();
-    virtual string sendPayment() = 0;
+  virtual string sendPayment() = 0;
 };
 
 

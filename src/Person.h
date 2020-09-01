@@ -6,9 +6,6 @@
 /**
  * Abstract Class of Person
  */
-#include "BankTransferSender.h"
-#include "CashSender.h"
-#include "CheckSender.h"
 #include "ISendPayment.h"
 class Person {
 public:
@@ -34,7 +31,7 @@ public:
 
     virtual std::string toString() const; // Virtual
 
-    std::string sendPayment();
+    std::string processPayment(ISendPayment* paymentSender);
 
 private:
     std::string firstName;

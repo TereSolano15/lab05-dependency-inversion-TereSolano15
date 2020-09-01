@@ -37,6 +37,6 @@ void Person::setDocumentId(int documentId) {
 std::string Person::toString() const {
     return getFirstName() + " " + getLastName() + "\nDoc Id: " + std::to_string(getDocumentId());
 }
-std::string Person::sendPayment() {
-    return "Payment";
+std::string Person::processPayment(ISendPayment* paymentSender) {
+    return paymentSender->sendPayment();
 }
